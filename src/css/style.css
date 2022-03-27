@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  color: rgb(27, 27, 27);
+  font-family: 'Open Sans', sans-serif;
+  background: rgb(33, 85, 175);
+}
+
+.wrapper {
+  max-width: 500px;
+  width: 30%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  background-color: rgb(255, 251, 245);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 18px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.todo {
+  list-style: none;
+}
+
+.todo li {
+  padding: 20px 18px;
+  border-bottom: 2px solid #f1f1f1;
+  font-family: inherit;
+}
+
+.syc {
+  padding: 1rem;
+  color: #888;
+  float: right;
+}
+
+.syc:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.todo li input {
+  float: left;
+  padding-right: 20px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.todo li img {
+  float: right;
+}
+
+.add-task {
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+}
+
+.add-task .add-icon {
+  font-weight: bolder;
+  font-size: 32px;
+  float: right;
+}
+
+.btn {
+  width: 100%;
+  padding: 18px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  border: none;
+  font-weight: bold;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #2563eb;
+  color: #fff;
+  border-radius: 0;
+}
+
+.italics {
+  border: none;
+  background-color: inherit;
+  width: 88%;
+}
+
+.italics:focus {
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
+
+.italics:placeholder-shown {
+  font-style: italic;
+  font-size: 20px;
+  padding-left: 20px;
+}
